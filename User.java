@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 
 public class User {
-    private String name;
+    protected String name;
     private LocalDate dob;
 
     public User() {
@@ -12,22 +12,6 @@ public class User {
     public User(String name, int year, int month, int day) {
         this.name = name;
         this.dob = LocalDate.of(year, month, day);
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public LocalDate getDob() {
-        return dob;
-    }
-
-    public void setDob(LocalDate dob) {
-        this.dob = dob;
     }
 
     public void displayInfo() {

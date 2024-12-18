@@ -4,7 +4,8 @@ public class Admin extends User {
     public Admin(String name, int year, int month, int day) {
         super(name, year, month, day);
     }
-@Override
+
+    @Override
     public void displayInfo() {
         super.displayInfo();
         System.out.println("User type: admin");
@@ -16,7 +17,7 @@ public class Admin extends User {
             System.out.println("User type: admin");
             System.out.println("Today's date: " + LocalDate.now());
         } else {
-            System.out.println("Name: " + getName());
+            System.out.println("Name: " + name);
         }
     }
 }
